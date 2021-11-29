@@ -52,10 +52,11 @@ resource "azurerm_kubernetes_cluster" "cluster" {
   }
 
   default_node_pool {
-    name           = "agentpool"
+    name           = "default"
     vm_size        = "Standard_DS2_v2"
     vnet_subnet_id = data.azurerm_subnet.aks.id
     enable_auto_scaling = true
+    os_disk_size_gb = 30
     node_count = 1
     min_count = 1
     max_count = 3
