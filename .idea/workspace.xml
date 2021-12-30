@@ -4,53 +4,18 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5b6a091-eaf1-425a-b1e1-bcd127374288" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.pre-commit-config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cluster/common.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cluster/main.tf.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cluster/modules.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kube/charts/ingress.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kube/charts/nginx/values.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kube/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/acr/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/acr/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/metadata/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/metadata/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/metadata/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/rg/locals.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/rg/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/rg/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/rg/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/common.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/locals.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/outputs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/terraform.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/terragrunt.hcl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/terraform.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster/aks.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster/data.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/data.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster/locals.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/locals.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster/logs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/logs.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster/outputs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/outputs.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/providers.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster/roles.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/roles.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/variables.tf" afterDir="false" />
+    <list default="true" id="f5b6a091-eaf1-425a-b1e1-bcd127374288" name="Changes" comment="updating">
+      <change afterPath="$PROJECT_DIR$/kube/common.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube/config.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube/terraform.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube/terragrunt.hcl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube/vars/dev.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kube/data.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kube/data.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kube/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kube/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kube/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kube/providers.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/network/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/network/providers.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-group/backend.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-group/main.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-group/terragrunt.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/terragrunt.hcl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-group/variables.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/tf-setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/tf-setup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terragrunt.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/terragrunt.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kube/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kube/variables.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +72,7 @@
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cluster" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/kube" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -117,6 +82,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LewaWa01\git\sandbox\aks-cluster-demo\kube" />
       <recent name="C:\Users\LewaWa01\git\sandbox\aks-cluster-demo\cluster" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -158,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638194360028</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updating">
+      <created>1640886736901</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1640886736901</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updating">
+      <created>1640886759779</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1640886759779</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +170,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="updating" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

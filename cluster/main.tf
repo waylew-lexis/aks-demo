@@ -70,9 +70,7 @@ resource "azurerm_kubernetes_cluster" "cluster" {
     type = "SystemAssigned"
   }
 
-  tags = {
-    contact = "wayne.lewalski@lexisnexisrisk.com"
-  }
+  tags = local.default_tags
 }
 
 
