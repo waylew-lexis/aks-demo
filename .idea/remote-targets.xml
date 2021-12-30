@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <option name="projectDefaultTargetUuid" value="e091fed1-d8b4-444b-984f-4be484c1f2df" />
+    <targets>
+      <target name="WSL - Ubuntu-20.04" type="wsl" uuid="e091fed1-d8b4-444b-984f-4be484c1f2df">
+        <config>
+          <option name="distributionMsId" value="Ubuntu-20.04" />
+          <option name="projectRootOnTarget" value="/mnt/c/Program Files/JetBrains/GoLand 213.5605.80/jbr/bin&#10;/aks-cluster-demo" />
+        </config>
+        <ContributedStateBase type="GoLanguageRuntime">
+          <config>
+            <option name="goPath" value="/home/waylew/go" />
+          </config>
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>

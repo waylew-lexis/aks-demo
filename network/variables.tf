@@ -1,9 +1,3 @@
-variable "acr_pull_access" {
-  description = "map of ACR ids to allow AcrPull"
-  type        = map(string)
-  default     = {}
-}
-
 variable "subscription_id" {
   type = string
 }
@@ -17,5 +11,3 @@ variable "name_prefix" {
   type    = string
   default = "waylew-aks"
 }
-
-

@@ -1,4 +1,4 @@
 data "azurerm_kubernetes_cluster" "cluster" {
-  name                = "waylew-cluster"
+  name                = "app-contoso-sandbox-eastus2"
   resource_group_name = "waylew-aks-cluster"
 }

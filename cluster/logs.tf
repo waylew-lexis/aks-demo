@@ -1,15 +1,15 @@
 resource "azurerm_log_analytics_workspace" "oms" {
-  name                = "waylew-aks-workspace"
-  location            = azurerm_resource_group.main.location
-  resource_group_name = azurerm_resource_group.main.name
-  sku                 = "Free"
-  retention_in_days   = 7
+  name                = "${var.name_prefix}-law"
+  location            = module.rg.location
+  resource_group_name = module.rg.name
+  retention_in_days   = 30
 }
 
 resource "azurerm_log_analytics_solution" "oms" {
   solution_name         = "ContainerInsights"
-  location              = azurerm_resource_group.main.location
-  resource_group_name   = azurerm_resource_group.main.name
+  #solution_name         = "Containers"
+  location            = module.rg.location
+  resource_group_name = module.rg.name
   workspace_resource_id = azurerm_log_analytics_workspace.oms.id
   workspace_name        = azurerm_log_analytics_workspace.oms.name
 
@@ -18,5 +18,4 @@ resource "azurerm_log_analytics_solution" "oms" {
     product   = "OMSGallery/ContainerInsights"
   }
 }
-
 

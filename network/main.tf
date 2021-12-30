@@ -1,27 +1,53 @@
-resource "azurerm_resource_group" "main" {
-  location = "eastus2"
-  name     = "waylew-aks-network"
+module "rg" {
+  source       = "../modules/rg"
+  environment  = local.environment
+  location     = var.location
+  product_name = var.name_prefix
+  service_name = "network"
 }
 
-resource "azurerm_virtual_network" "vnet" {
-  address_space       = ["10.0.0.0/8"]
-  location            = azurerm_resource_group.main.location
-  name                = "waylew-aks-vnet"
-  resource_group_name = azurerm_resource_group.main.name
-}
+module "virtual_network" {
+  source = "git::https://github.com/Azure-Terraform/terraform-azurerm-virtual-network.git?ref=v5.0.0"
 
-module "subnet_aks" {
-  source = "../modules/subnet"
-  address_prefixes = ["10.240.0.0/16"]
-  name = "aks"
-  resource_group_name = azurerm_resource_group.main.name
-  virtual_network_name = azurerm_virtual_network.vnet.name
-}
+  #naming_rules = module.metadata.naming_yaml
 
-module "subnet_aci" {
-  source = "../modules/subnet"
-  address_prefixes = ["10.241.0.0/16"]
-  name = "virtual-node-aci"
-  resource_group_name = azurerm_resource_group.main.name
-  virtual_network_name = azurerm_virtual_network.vnet.name
+  resource_group_name = module.rg.name
+  location            = module.rg.location
+  #names               = module.metadata.names
+  names = local.names
+  tags  = local.default_tags
+
+  address_space = ["10.1.0.0/22"]
+
+  subnets = {
+    iaas-private = {
+      cidrs                   = ["10.1.0.0/24"]
+      route_table_association = "aks"
+      configure_nsg_rules     = false
+      service_endpoints       = ["Microsoft.Storage", "Microsoft.ContainerRegistry"]
+    }
+    iaas-public = {
+      cidrs                   = ["10.1.1.0/24"]
+      route_table_association = "aks"
+      configure_nsg_rules     = false
+      service_endpoints       = ["Microsoft.Storage", "Microsoft.ContainerRegistry"]
+    }
+  }
+
+  route_tables = {
+    aks = {
+      disable_bgp_route_propagation = true
+      use_inline_routes             = false
+      routes = {
+        internet = {
+          address_prefix = "0.0.0.0/0"
+          next_hop_type  = "Internet"
+        }
+        local-vnet = {
+          address_prefix = "10.1.0.0/22"
+          next_hop_type  = "vnetlocal"
+        }
+      }
+    }
+  }
 }
