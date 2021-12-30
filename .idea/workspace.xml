@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f5b6a091-eaf1-425a-b1e1-bcd127374288" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.pre-commit-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cluster/common.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cluster/main.tf.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cluster/modules.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube/charts/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube/charts/nginx/values.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube/variables.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/acr/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/acr/variables.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/metadata/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/metadata/outputs.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/metadata/variables.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/rg/locals.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/rg/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/rg/outputs.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/rg/variables.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/common.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/locals.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/outputs.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/terraform.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/terragrunt.hcl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/terraform.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster/aks.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster/data.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/data.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster/locals.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/locals.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster/logs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/logs.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster/outputs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/outputs.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/providers.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster/roles.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/roles.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kube/data.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kube/data.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kube/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kube/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kube/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kube/providers.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/.terraform.lock.hcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/network/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/network/providers.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-group/backend.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-group/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-group/terragrunt.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/terragrunt.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-group/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/tf-setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/tf-setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terragrunt.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/terragrunt.hcl" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.17.3" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="4" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+    <option name="urls">
+      <list>
+        <option value="file://$USER_HOME$/go/" />
+      </list>
+    </option>
+    <option name="useGoPathFromSystemEnvironment" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="21KJ2h3bSuaZUUkms9ag112wa0D" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TF_FMT" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="code.cleanup.on.save" value="true" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cluster" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LewaWa01\git\sandbox\aks-cluster-demo\cluster" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu-20.04\home\waylew\git\sandbox\aks-cluster-demo" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="terraform" type="#org.intellij.plugins.hcl.terraform.run.TerraformConfigurationType" factoryName="Terraform" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="workingDirectory" value="C:\ProgramData\chocolatey\bin" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../../../../../ProgramData/chocolatey/bin" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5b6a091-eaf1-425a-b1e1-bcd127374288" name="Changes" comment="init commit" />
+      <created>1638193778606</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638193778606</updated>
+    </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1638194360028</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638194360028</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+</project>
