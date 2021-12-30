@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5b6a091-eaf1-425a-b1e1-bcd127374288" name="Changes" comment="updating">
-      <change afterPath="$PROJECT_DIR$/kube/common.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kube/config.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kube/terraform.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kube/terragrunt.hcl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kube/vars/dev.tfvars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kube/data.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kube/data.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kube/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kube/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kube/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kube/providers.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kube/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kube/variables.tf" afterDir="false" />
-    </list>
+    <list default="true" id="f5b6a091-eaf1-425a-b1e1-bcd127374288" name="Changes" comment="updating" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640886759779</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updating">
+      <created>1640889587920</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640889587920</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
