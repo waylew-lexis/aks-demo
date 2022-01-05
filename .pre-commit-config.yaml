@@ -1,5 +1,15 @@
+exclude: ^bootstrap/
 repos:
-  - repo: https://github.com/gruntwork-io/pre-commit
-    rev:  v0.1.9
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.52.0
     hooks:
-      - id: terraform-fmt
+      - id: terraform_fmt
+      - id: terraform_validate
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-json
+      - id: end-of-file-fixer
+      - id: trailing-whitespace

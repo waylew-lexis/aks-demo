@@ -12,23 +12,6 @@ data "http" "my_ip" {
   url = "https://ifconfig.me"
 }
 
-data "azurerm_virtual_network" "vnet" {
-  name                = "waylew-aks-${local.environment}-eastus2-vnet"
-  resource_group_name = "waylew-aks-network-${local.environment}"
-}
-
-data "azurerm_subnet" "aks_private" {
-  name                 = "iaas-private"
-  virtual_network_name = data.azurerm_virtual_network.vnet.name
-  resource_group_name  = data.azurerm_virtual_network.vnet.resource_group_name
-}
-
-data "azurerm_subnet" "aks_public" {
-  name                 = "iaas-public"
-  virtual_network_name = data.azurerm_virtual_network.vnet.name
-  resource_group_name  = data.azurerm_virtual_network.vnet.resource_group_name
-}
-
 data "terraform_remote_state" "vnet" {
   backend = "remote"
   config = {

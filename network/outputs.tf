@@ -1,15 +1,12 @@
 output "workspace" {
-  value = terraform.workspace
+  value = local.environment
 }
 
 output "vnet_id" {
   value = module.virtual_network.vnet.id
 }
 
-output "private_subnet_id" {
-  value = module.virtual_network.subnets["iaas-private"].id
+output "aks_vnet" {
+  value = module.virtual_network.aks["demo"]
 }
 
-output "public_subnet_id" {
-  value = module.virtual_network.subnets["iaas-public"].id
-}

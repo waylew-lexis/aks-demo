@@ -14,38 +14,33 @@ module "virtual_network" {
   resource_group_name = module.rg.name
   location            = module.rg.location
   #names               = module.metadata.names
-  names = local.names
-  tags  = local.default_tags
+  names                = local.names
+  tags                 = local.default_tags
+  enforce_subnet_names = false
 
   address_space = ["10.1.0.0/22"]
 
-  subnets = {
-    iaas-private = {
-      cidrs                   = ["10.1.0.0/24"]
-      route_table_association = "aks"
-      configure_nsg_rules     = false
-      service_endpoints       = ["Microsoft.Storage", "Microsoft.ContainerRegistry"]
-    }
-    iaas-public = {
-      cidrs                   = ["10.1.1.0/24"]
-      route_table_association = "aks"
-      configure_nsg_rules     = false
-      service_endpoints       = ["Microsoft.Storage", "Microsoft.ContainerRegistry"]
-    }
-  }
-
-  route_tables = {
-    aks = {
-      disable_bgp_route_propagation = true
-      use_inline_routes             = false
-      routes = {
-        internet = {
-          address_prefix = "0.0.0.0/0"
-          next_hop_type  = "Internet"
-        }
-        local-vnet = {
-          address_prefix = "10.1.0.0/22"
-          next_hop_type  = "vnetlocal"
+  aks_subnets = {
+    demo = {
+      private = {
+        cidrs             = ["10.1.3.0/25"]
+        service_endpoints = ["Microsoft.Storage", "Microsoft.ContainerRegistry"]
+      }
+      public = {
+        cidrs             = ["10.1.3.128/25"]
+        service_endpoints = ["Microsoft.Storage", "Microsoft.ContainerRegistry"]
+      }
+      route_table = {
+        disable_bgp_route_propagation = true
+        routes = {
+          internet = {
+            address_prefix = "0.0.0.0/0"
+            next_hop_type  = "Internet"
+          }
+          local-vnet-10-1-0-0-21 = {
+            address_prefix = "10.1.0.0/21"
+            next_hop_type  = "vnetlocal"
+          }
         }
       }
     }
