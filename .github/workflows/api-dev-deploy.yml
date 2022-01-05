@@ -1,0 +1,58 @@
+name: deploy api
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "code/api**"
+
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+    working-directory: code
+
+env:
+  ARM_SUBSCRIPTION_ID: ${{ secrets.AZ_SUBSCRIPTION_ID }}
+  ARM_USE_MSI: true
+
+jobs:
+  build:
+    runs-on: [ self-hosted, azure, dev, sre ]
+    environment:
+      name: dev
+    env:
+      vault_address: ${{ secrets.VAULT_ADDRESS }}
+      vault_token: $${{ secrets.VAULT_TOKEN }}
+    steps:
+      - name: terraform init with backend
+      - name: set or create terraform workspace
+      - name: validate terraform
+      - name: generate terraform plan with dev tfvars
+      - name: publish terraform artifacts
+      - name: build api code
+      - name: test api code
+      - name: publish api artitacts
+  gate:
+    runs-on: ubuntu-latest
+    needs: [build]
+    environment: approver-gate
+    steps:
+      - name: review artiacts
+  deploy:
+    runs-on: [ self-hosted, azure, dev, sre ]
+    needs: [gate]
+    environment:
+      name: dev
+      url: https://dev.api.net
+    env:
+      vault_address: ${{ secrets.VAULT_ADDRESS }}
+      vault_token: $${{ secrets.VAULT_TOKEN }}
+    steps:
+      - name: download build artifacts
+      - name: set terraform backend
+      - name: set terraform workspace
+      - name: apply terraform from plan artifact
+      - name: deploy code to resource
+      - name: run tests
